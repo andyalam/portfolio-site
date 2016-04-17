@@ -1,15 +1,16 @@
 #bg1 {
     /*margin-top: -20px;*/
 	background-image: url("../images/astronaut1.jpg");
-    background-repeat: no-repeat;
-    background-color: #333;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #333;
 }
 
 .jumbotron {
     margin-top: 10px;
     background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
     background: rgba(204, 204, 204, 0.2);
-    
+
     box-shadow: inset 0px 0px 0 2000px rgba(0,0,0,0.7);
     color: white;
 }
@@ -23,4 +24,3 @@
     height: 200px;
     width: 200px;
 }
-
