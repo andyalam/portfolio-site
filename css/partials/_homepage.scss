@@ -1,10 +1,18 @@
+//Overuse of importants to take over bootstrap theme, change later.
+
 .navbar {
 	background: rgba(0,0,0,0.8);
 	.active > a {
 		background-color: $blue-light !important;
+    &:hover {
+      background-color: $blue-light * 2 !important;
+    }
 	}
   .active2 > a {
     background-color: $red-light !important;
+    &:hover {
+      background-color: $red-light * 2 !important;
+    }
   }
 	//removed for now, will display in old mobile site, display used in media
 	//below
@@ -16,6 +24,9 @@
 	background: rgba(0,0,0,0.9);
 	button {
 		background-color: $blue-light !important;
+    &:hover {
+      background-color: $blue-light * 2 !important;
+    }
 	}
 }
 
@@ -46,6 +57,9 @@
         width: 100%;
         margin: 5px 0;
         font-size: 12px;
+        &:hover {
+          background-color: $red-light * 2;
+        }
       }
 			//.github { background-color: $green-light; }
 			//.facebook { background-color: $blue-dark; }
@@ -122,6 +136,9 @@
 
 .btn-contact {
 	background-color: $blue-light !important;
+  &:hover {
+    background-color: $blue-light * 2 !important;
+  }
 }
 
 .contact-mobile-form {
