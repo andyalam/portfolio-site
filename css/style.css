@@ -27,7 +27,8 @@
     position: relative;
     width: 100%; }
     #bg1 .personal .external-links {
-      display: block; }
+      display: block;
+      margin-top: 20px; }
       #bg1 .personal .external-links .btn {
         background-color: #FF5252;
         display: block;
@@ -44,8 +45,10 @@
       margin-top: 21px;
       max-height: 250px; }
 
-#bg2 .img-wrap .img-responsive {
-  margin: 0 auto; }
+#bg2 .img-wrap {
+  position: relative; }
+  #bg2 .img-wrap .img-responsive {
+    margin: 0 auto; }
 
 .holder {
   position: relative; }
@@ -76,7 +79,7 @@
 
   #footer {
     background-color: #008cba; } }
-@media (max-width: 991px) and (min-width: 768px) {
+@media (max-width: 991px) {
   .profile {
     display: none; } }
 

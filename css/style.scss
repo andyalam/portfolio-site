@@ -41,6 +41,7 @@ $green-light: #66BB6A;
 		width: 100%;
     .external-links {
 			display: block;
+			margin-top: 20px;
       .btn {
 			  background-color: $red-light;
         display: block;
@@ -62,6 +63,7 @@ $green-light: #66BB6A;
 
 #bg2 {
 	.img-wrap {
+		position: relative;
 		.img-responsive {
 			margin: 0 auto;
 		}
@@ -108,7 +110,7 @@ $green-light: #66BB6A;
 }
 @media (min-width: 480px) {
 }
-@media (max-width: 991px) and (min-width : 768px) {
+@media (max-width: 991px) {
 	.profile {
 		display: none;
 	}
