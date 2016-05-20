@@ -2,6 +2,8 @@
   background: rgba(0, 0, 0, 0.8); }
   .navbar .active > a {
     background-color: #5bc0de !important; }
+  .navbar .active2 > a {
+    background-color: #FF5252 !important; }
   .navbar .dropdown {
     display: none; }
 
@@ -35,10 +37,6 @@
         width: 100%;
         margin: 5px 0;
         font-size: 12px; }
-      #bg1 .personal .external-links .github {
-        background-color: #66BB6A; }
-      #bg1 .personal .external-links .facebook {
-        background-color: #01579B; }
     #bg1 .personal .profile {
       border-radius: 100%;
       margin: 0 auto;

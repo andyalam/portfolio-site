@@ -3,6 +3,9 @@
 	.active > a {
 		background-color: $blue-light !important;
 	}
+  .active2 > a {
+    background-color: $red-light !important;
+  }
 	//removed for now, will display in old mobile site, display used in media
 	//below
 	.dropdown {
@@ -44,8 +47,8 @@
         margin: 5px 0;
         font-size: 12px;
       }
-			.github { background-color: $green-light; }
-			.facebook { background-color: $blue-dark; }
+			//.github { background-color: $green-light; }
+			//.facebook { background-color: $blue-dark; }
     }
 		.profile {
 			border-radius: 100%;
