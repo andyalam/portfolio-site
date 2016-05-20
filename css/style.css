@@ -47,6 +47,12 @@
 #bg2 .img-wrap .img-responsive {
   margin: 0 auto; }
 
+.holder {
+  position: relative; }
+  .holder .dummy-link {
+    position: absolute;
+    top: -45px; }
+
 #contactModal {
   color: black; }
 

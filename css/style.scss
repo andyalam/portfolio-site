@@ -68,6 +68,14 @@ $green-light: #66BB6A;
 	}
 }
 
+.holder {
+	position: relative;
+	.dummy-link {
+		position: absolute;
+		top: -45px;
+	}
+}
+
 #contactModal {
     color: black;
 }
