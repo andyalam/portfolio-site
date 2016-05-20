@@ -24,13 +24,13 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-        <a class="navbar-brand">Andy Alameddine</a>
-        <button class="navbar-toggle" data-toggle ="collapse" data-target=".navHeaderCollapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+          <a class="navbar-brand">Andy Alameddine</a>
+          <button class="navbar-toggle" data-toggle ="collapse" data-target=".navHeaderCollapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
         <div class="collapse navbar-collapse navHeaderCollapse">
           <ul class="nav navbar-nav navbar-right">
@@ -51,38 +51,54 @@
 
     <div id="bg1">
         <div class="container">
-        <div class="jumbotron">
-            <h1>Hello!</h1>
-            <p>
-            My name is Andy Alameddine. I'm a computer science student and aspiring software developer. This site is where I host all
-            the projects I'm working on.
-            <br><br>
-            Languages and Frameworks: <br>
-            C++, Javascript, MEAN stack, HTML5, CSS3, jQuery, Bootstrap3. <br><br>
-            If you'd like to collaborate
-            on a project or if you're an employer looking at this page off my resume, contact me and we'll see what
-            we can do!
-            </p>
+          <div class="jumbotron">
+            <div class="row info">
 
-            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#contactModal">Contact Me</button>
-            <div id="contactModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Contact Info:</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>Email: andyalam@hotmail.com</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <div class="col-md-9">
+                <h1>Hello!</h1>
+                <p>
+                My name is Andy Alameddine. I'm a computer science student and aspiring software developer. This site is where I host all
+                the projects I'm working on.
+                <br><br>
+                Languages and Frameworks: <br>
+                C++, Javascript, MEAN stack, HTML5, CSS3, jQuery, Bootstrap3. <br><br>
+                If you'd like to collaborate
+                on a project or if you're an employer looking at this page off my resume, contact me and we'll see what
+                we can do!
+                </p>
+                <button type="button" class="contact-mobile-form btn btn-info" data-toggle="modal" data-target="#contactModal">Contact Me</button>
+                <div id="contactModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Contact Info:</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Email: andyalam@hotmail.com</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
+              </div>
+              <div class="col-md-3">
+                <div class="personal">
+                  <div class="">
+                    <img class="profile img-responsive" src="images/consolesmiley.jpg" alt="consolesmiley" />
+                    <div class="external-links">
+                      <a class="btn btn-primary github" href="http://www.github.com/andyalam" target="_blank">Github</a>
+                      <a class="btn btn-primary instagram" href="http://www.instagram.com/andy.alam" target="_blank">Instagram</a>
+                      <a class="btn btn-primary facebook" href="http://www.facebook.com/andy.alam" target="_blank">Facebook</a>
+                      <a class="btn btn-info btn-contact" data-toggle="modal" data-target="#contactModal">Contact Me</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
-        </div>
+          </div>
         </div>
     </div>
 
@@ -93,7 +109,7 @@
                 <div class="col-sm-4">
                     <h3>Stars Near Earth</h3>
                     <!--<div class= "placeholder"></div>-->
-                    <img class="img-responsive" src="images/proj1.png" alt="Stars Near Earth screenshot">
+                    <div class="img-wrap"><img class="img-responsive" src="images/proj1.png" alt="Stars Near Earth screenshot"></div>
                     <h4>C++</h4>
                     <a href="https://github.com/andyalam/nearby-stars" target="_blank"><h5>Github repository</h5></a>
                     <p>Console program that displays the 100 nearest stars to earth. It projects XY and YZ planes.
@@ -102,14 +118,14 @@
                 </div>
                 <div class="col-sm-4">
                     <h3>Sorting Timer</h3>
-                    <img class="img-responsive" src="images/sorttimer.png" alt="Sorting Timer screenshot">
+                    <div class="img-wrap"><img class="img-responsive" src="images/sorttimer.png" alt="Sorting Timer screenshot"></div>
                     <h4>C++</h4>
                     <a href="https://github.com/andyalam/sorting-timing-app" target="_blank"><h5>Github repository</h5></a>
                     <p>Console program that allows the user to choose from several different sorting/searching algorithms of different sample sizes and returns their timing.</p>
                 </div>
                 <div class="col-sm-4">
                     <h3>Random Quote Machine</h3>
-                    <img class="img-responsive" src="images/quotemachine1.png" alt="Random Quote Machine screenshot">
+                    <div class="img-wrap"><img class="img-responsive" src="images/quotemachine1.png" alt="Random Quote Machine screenshot"></div>
                     <h4>Javascript</h4>
                     <a href="https://github.com/andyalam/random-quote-machine" target="_blank"><h5>Github repository</h5></a>
                     <a href="http://andyalam.com/quotemachine/quotemachine.html" target="_blank"><h5>Try it out!</h5></a>
@@ -119,7 +135,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <h3>JS Calculator</h3>
-                    <img class="img-responsive" src="images/jscalc.png" alt="JS Calculator screenshot">
+                    <div class="img-wrap"><img class="img-responsive" src="images/jscalc.png" alt="JS Calculator screenshot"></div>
                     <h4>Javascript</h4>
                     <a href="https://github.com/andyalam/JS-calculator" target="_blank"><h5>Github repository</h5></a>
                     <a href="http://andyalam.com/jscalc/jscalc.html" target="_blank"><h5>Try it out!</h5></a>
@@ -127,7 +143,7 @@
                 </div>
                 <div class="col-sm-4">
                     <h3>Weather App</h3>
-                    <img class="img-responsive" src="images/weatherapp.png" alt="weatherapp screenshot">
+                    <div class="img-wrap"><img class="img-responsive" src="images/weatherapp.png" alt="weatherapp screenshot"></div>
                     <h4>Javascript</h4>
                     <a href="https://github.com/andyalam/weather-app" target="_blank"><h5>Github repository</h5></a>
                     <a href="http://andyalam.com/weatherapp/weatherapp.html" target="_blank"><h5>Try it out!</h5></a>
@@ -135,7 +151,7 @@
                 </div>
                 <div class="col-sm-4">
                     <h3>Loc8r</h3>
-                    <img class="img-responsive" src="images/loc8r.png" alt="Loc8r screenshot">
+                    <div class="img-wrap"><img class="img-responsive" src="images/loc8r.png" alt="Loc8r screenshot"></div>
                     <h4>MEAN(MongoDB, Express, AngularJS, Node)</h4>
                     <a href="https://github.com/andyalam/loc8r" target="_blank"><h5>Github repository</h5></a>
                     <p>I'm currently going through a MEAN stack book, using it to develop a web app where users are able to add locations, submit reviews, leave comments, and share their favorite locations.</p>
