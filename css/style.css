@@ -52,8 +52,6 @@
   height: 250px;
   margin: 0 auto;
   box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
-  background: url(../images/loc8r.png);
-  background-size: cover;
   overflow: hidden; }
   #bg2 .img-box .overlay {
     background: rgba(0, 0, 0, 0.75);
@@ -68,10 +66,32 @@
       color: #FF5252; }
       #bg2 .img-box .overlay a:first-of-type {
         color: #5bc0de; }
+        #bg2 .img-box .overlay a:first-of-type:hover {
+          color: #b6ffff; }
+      #bg2 .img-box .overlay a:hover {
+        color: #ffa4a4; }
       #bg2 .img-box .overlay a:hover {
         text-decoration: none; }
     #bg2 .img-box .overlay i {
       font-size: 60px; }
+  #bg2 .img-box.loc8r {
+    background: url(../images/loc8r.png);
+    background-size: cover; }
+  #bg2 .img-box.weatherapp {
+    background: url(../images/weatherapp.png);
+    background-size: cover; }
+  #bg2 .img-box.jscalc {
+    background: url(../images/jscalc.png);
+    background-size: cover; }
+  #bg2 .img-box.sorttimer {
+    background: url(../images/sorttimer.png);
+    background-size: cover; }
+  #bg2 .img-box.quotemachine {
+    background: url(../images/quotemachine1.png);
+    background-size: cover; }
+  #bg2 .img-box.starsnearearth {
+    background: url(../images/starsnearearth.png);
+    background-size: cover; }
 
 .holder {
   position: relative; }

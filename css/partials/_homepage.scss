@@ -67,8 +67,6 @@
 		height: 250px;
 		margin: 0 auto;
 		box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
-		background: url(../images/loc8r.png);
-		background-size: cover;
 		overflow: hidden;
 		.overlay {
 			background:rgba(0,0,0,.75);
@@ -81,8 +79,16 @@
 				opacity: 1;
 			}
 			a {
-				&:first-of-type { color: $blue-light; }
+				&:first-of-type {
+          color: $blue-light;
+          &:hover {
+            color: $blue-light * 2;
+          }
+        }
 				color: $red-light;
+        &:hover {
+          color: $red-light * 2;
+        }
 
 				&:hover {
 					text-decoration: none;
@@ -90,6 +96,12 @@
 			}
 			i { font-size: 60px; }
 		}
+    &.loc8r { background: url(../images/loc8r.png); background-size: cover;}
+    &.weatherapp { background: url(../images/weatherapp.png); background-size: cover;}
+    &.jscalc { background: url(../images/jscalc.png); background-size: cover;}
+    &.sorttimer { background: url(../images/sorttimer.png); background-size: cover;}
+    &.quotemachine { background: url(../images/quotemachine1.png); background-size: cover;}
+    &.starsnearearth { background: url(../images/starsnearearth.png); background-size: cover;}
 	}
 }
 
