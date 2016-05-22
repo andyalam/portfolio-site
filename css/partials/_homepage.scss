@@ -2,6 +2,9 @@
 
 .navbar {
 	background: rgba(0,0,0,0.8);
+	a {
+		transition: all ease-in-out 100ms;
+	}
 	.active > a {
 		background-color: $blue-light !important;
     &:hover {
@@ -24,6 +27,7 @@
 	background: rgba(0,0,0,0.9);
 	button {
 		background-color: $blue-light !important;
+		transition: all ease-in-out 100ms;
     &:hover {
       background-color: $blue-light * 2 !important;
     }
@@ -57,9 +61,20 @@
         width: 100%;
         margin: 5px 0;
         font-size: 12px;
+				transition: all ease-in-out 100ms;
         &:hover {
           background-color: $red-light * 2;
+					transform: translate(-3px, 0);
+					box-shadow: 0px 0px 10px 1px $red-light;
         }
+				&.btn-contact {
+					background-color: $blue-light;
+				  &:hover {
+				    background-color: $blue-light * 2;
+						box-shadow: 0px 0px 10px 1px $blue-light;
+						color: black;
+				  }
+				}
       }
 			//.github { background-color: $green-light; }
 			//.facebook { background-color: $blue-dark; }
@@ -96,13 +111,14 @@
 				opacity: 1;
 			}
 			a {
+				transition: all ease-in-out 100ms;
+				color: $red-light;
 				&:first-of-type {
           color: $blue-light;
           &:hover {
             color: $blue-light * 2;
           }
         }
-				color: $red-light;
         &:hover {
           color: $red-light * 2;
         }
@@ -131,14 +147,7 @@
 }
 
 #contactModal {
-    color: black;
-}
-
-.btn-contact {
-	background-color: $blue-light !important;
-  &:hover {
-    background-color: $blue-light * 2 !important;
-  }
+  color: black;
 }
 
 .contact-mobile-form {
