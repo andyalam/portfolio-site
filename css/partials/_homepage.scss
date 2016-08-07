@@ -1,35 +1,44 @@
 //Overuse of importants to take over bootstrap theme, change later.
 
-.navbar {
+body .navbar {
 	background: rgba(0,0,0,0.8);
-	a {
-		transition: all ease-in-out 100ms;
-	}
-	.active > a {
-		background-color: $blue-light !important;
-    &:hover {
-      background-color: $blue-light * 2 !important;
-    }
-	}
-  .active2 > a {
-    background-color: $red-light !important;
-    &:hover {
-      background-color: $red-light * 2 !important;
-    }
-  }
-	//removed for now, will display in old mobile site, display used in media
-	//below
-	.dropdown {
-		display: none;
+	// Theme specificity override
+	.container {
+		a {
+			transition: all ease-in-out 100ms;
+		}
+		.active > a {
+			background-color: $blue-light;
+	    &:hover {
+	      background-color: $blue-light * 2;
+	    }
+		}
+	  .active2 > a {
+	    background-color: $red-light;
+	    &:hover {
+	      background-color: $red-light * 2;
+	    }
+	  }
+		//removed for now, will display in old mobile site, display used in media
+		//below
+		.dropdown {
+			display: none;
+		}
 	}
 }
-#footer {
+
+body #footer {
 	background: rgba(0,0,0,0.9);
 	button {
-		background-color: $blue-light !important;
+		background-color: $blue-light;
 		transition: all ease-in-out 100ms;
+		border-color: $blue-light;
+		margin-bottom: 0;
+		margin-top: 0;
+		padding-bottom: 12px;
+		padding-top: 12px;
     &:hover {
-      background-color: $blue-light * 2 !important;
+      background-color: $blue-light * 2;
     }
 	}
 }
@@ -57,6 +66,7 @@
 			margin-top: 20px;
       .btn {
 			  background-color: $red-light;
+				border-color: $red-light;
         display: block;
         width: 100%;
         margin: 5px 0;
@@ -69,6 +79,7 @@
         }
 				&.btn-contact {
 					background-color: $blue-light;
+					border-color: $blue-light;
 				  &:hover {
 				    background-color: $blue-light * 2;
 						box-shadow: 0px 0px 10px 1px $blue-light;
@@ -89,13 +100,14 @@
 }
 
 #bg2 {
+	margin-bottom: 100px;
 	.img-wrap {
 		.img-responsive {
 			margin: 0 auto;
 		}
 	}
 	.img-box {
-		width: 350px;
+		width: 100%;
 		height: 250px;
 		margin: 0 auto;
 		box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
@@ -155,7 +167,7 @@
 }
 
 //Separation of Desktop/Tablet and Phone displays for now
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 	.personal {
 		display: none;
 	}
@@ -167,12 +179,16 @@
 		.dropdown {
 			display: block;
 		}
+		.navbar-nav {
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
 	}
 	#footer {
-		background-color: #008cba;
+		.navbar-text {
+			display: none;
+		}
 	}
-}
-@media (min-width: 480px) {
 }
 @media (max-width: 991px) {
 	.profile {
