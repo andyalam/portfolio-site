@@ -2,23 +2,28 @@ body .navbar {
   background: rgba(0, 0, 0, 0.8); }
   body .navbar .container a {
     transition: all ease-in-out 100ms; }
-  body .navbar .container .active > a {
-    background-color: #5bc0de; }
-    body .navbar .container .active > a:hover {
-      background-color: #b6ffff; }
-  body .navbar .container .active2 > a {
-    background-color: #FF5252; }
-    body .navbar .container .active2 > a:hover {
-      background-color: #ffa4a4; }
+  @media (min-width: 768px) {
+    body .navbar .container .active > a {
+      background-color: #5bc0de; }
+      body .navbar .container .active > a:hover {
+        background-color: #b6ffff; }
+    body .navbar .container .active2 > a {
+      background-color: #FF5252; }
+      body .navbar .container .active2 > a:hover {
+        background-color: #ffa4a4; } }
   body .navbar .container .dropdown {
     display: none; }
+  body .navbar .container .navbar-right {
+    margin-right: 0; }
+  body .navbar .container .navbar-brand {
+    margin-left: -10px; }
 
 body #footer {
   background: rgba(0, 0, 0, 0.9); }
   body #footer button {
     background-color: #5bc0de;
     transition: all ease-in-out 100ms;
-    border-color: #5bc0de;
+    border: none;
     margin-bottom: 0;
     margin-top: 0;
     padding-bottom: 12px;
@@ -79,7 +84,8 @@ body #footer {
     height: 250px;
     margin: 0 auto;
     box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
-    overflow: hidden; }
+    overflow: hidden;
+    background-size: cover; }
     #bg2 .img-box .overlay {
       background: rgba(0, 0, 0, 0.75);
       text-align: center;
@@ -103,23 +109,17 @@ body #footer {
       #bg2 .img-box .overlay i {
         font-size: 60px; }
     #bg2 .img-box.loc8r {
-      background: url(../images/loc8r.png);
-      background-size: cover; }
+      background: url(../images/loc8r.png); }
     #bg2 .img-box.weatherapp {
-      background: url(../images/weatherapp.png);
-      background-size: cover; }
+      background: url(../images/weatherapp.png); }
     #bg2 .img-box.jscalc {
-      background: url(../images/jscalc.png);
-      background-size: cover; }
+      background: url(../images/jscalc.png); }
     #bg2 .img-box.sorttimer {
-      background: url(../images/sorttimer.png);
-      background-size: cover; }
+      background: url(../images/sorttimer.png); }
     #bg2 .img-box.quotemachine {
-      background: url(../images/quotemachine1.png);
-      background-size: cover; }
+      background: url(../images/quotemachine1.png); }
     #bg2 .img-box.starsnearearth {
-      background: url(../images/starsnearearth.png);
-      background-size: cover; }
+      background: url(../images/starsnearearth.png); }
 
 .holder {
   position: relative; }
@@ -147,6 +147,10 @@ body #footer {
     .navbar .navbar-nav {
       margin-top: 0;
       margin-bottom: 10px; }
+      .navbar .navbar-nav li.active a {
+        background-color: inherit; }
+    .navbar .navbar-collapse {
+      border-top: 1px solid white; }
 
   #footer .navbar-text {
     display: none; } }

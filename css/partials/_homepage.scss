@@ -7,22 +7,30 @@ body .navbar {
 		a {
 			transition: all ease-in-out 100ms;
 		}
-		.active > a {
-			background-color: $blue-light;
-	    &:hover {
-	      background-color: $blue-light * 2;
-	    }
+		@media (min-width: 768px) {
+			.active > a {
+				background-color: $blue-light;
+		    &:hover {
+		      background-color: $blue-light * 2;
+		    }
+			}
+		  .active2 > a {
+		    background-color: $red-light;
+		    &:hover {
+		      background-color: $red-light * 2;
+		    }
+		  }
 		}
-	  .active2 > a {
-	    background-color: $red-light;
-	    &:hover {
-	      background-color: $red-light * 2;
-	    }
-	  }
 		//removed for now, will display in old mobile site, display used in media
 		//below
 		.dropdown {
 			display: none;
+		}
+		.navbar-right {
+			margin-right: 0;
+		}
+		.navbar-brand {
+			margin-left: -10px;
 		}
 	}
 }
@@ -32,7 +40,7 @@ body #footer {
 	button {
 		background-color: $blue-light;
 		transition: all ease-in-out 100ms;
-		border-color: $blue-light;
+		border: none;
 		margin-bottom: 0;
 		margin-top: 0;
 		padding-bottom: 12px;
@@ -112,6 +120,7 @@ body #footer {
 		margin: 0 auto;
 		box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
 		overflow: hidden;
+		background-size: cover;
 		.overlay {
 			background:rgba(0,0,0,.75);
 	    text-align: center;
@@ -141,12 +150,12 @@ body #footer {
 			}
 			i { font-size: 60px; }
 		}
-    &.loc8r { background: url(../images/loc8r.png); background-size: cover;}
-    &.weatherapp { background: url(../images/weatherapp.png); background-size: cover;}
-    &.jscalc { background: url(../images/jscalc.png); background-size: cover;}
-    &.sorttimer { background: url(../images/sorttimer.png); background-size: cover;}
-    &.quotemachine { background: url(../images/quotemachine1.png); background-size: cover;}
-    &.starsnearearth { background: url(../images/starsnearearth.png); background-size: cover;}
+    &.loc8r { background: url(../images/loc8r.png); }
+    &.weatherapp { background: url(../images/weatherapp.png); }
+    &.jscalc { background: url(../images/jscalc.png); }
+    &.sorttimer { background: url(../images/sorttimer.png); }
+    &.quotemachine { background: url(../images/quotemachine1.png); }
+    &.starsnearearth { background: url(../images/starsnearearth.png); }
 	}
 }
 
@@ -182,6 +191,12 @@ body #footer {
 		.navbar-nav {
 			margin-top: 0;
 			margin-bottom: 10px;
+			li.active a {
+				background-color: inherit;
+			}
+		}
+		.navbar-collapse {
+				border-top: 1px solid white;
 		}
 	}
 	#footer {
