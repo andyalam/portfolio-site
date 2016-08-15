@@ -163,5 +163,7 @@ body #footer {
 @media (max-width: 991px) {
   .profile {
     display: none; } }
+.modal-backdrop {
+  background-color: white; }
 
 /*# sourceMappingURL=style.css.map */

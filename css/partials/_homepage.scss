@@ -1,5 +1,3 @@
-//Overuse of importants to take over bootstrap theme, change later.
-
 body .navbar {
 	background: rgba(0,0,0,0.8);
 	// Theme specificity override
@@ -210,4 +208,8 @@ body #footer {
 	.profile {
 		display: none;
 	}
+}
+
+.modal-backdrop {
+	background-color: white;
 }
