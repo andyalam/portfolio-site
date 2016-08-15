@@ -15,8 +15,9 @@ body .navbar {
     display: none; }
   body .navbar .container .navbar-right {
     margin-right: 0; }
-  body .navbar .container .navbar-brand {
-    margin-left: -10px; }
+  @media (min-width: 768px) {
+    body .navbar .container .navbar-brand {
+      margin-left: -10px; } }
 
 body #footer {
   background: rgba(0, 0, 0, 0.9); }
