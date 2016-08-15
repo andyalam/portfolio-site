@@ -120,7 +120,6 @@ body #footer {
 		margin: 0 auto;
 		box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
 		overflow: hidden;
-		background-size: cover;
 		.overlay {
 			background:rgba(0,0,0,.75);
 	    text-align: center;
@@ -150,12 +149,12 @@ body #footer {
 			}
 			i { font-size: 60px; }
 		}
-    &.loc8r { background: url(../images/loc8r.png); }
-    &.weatherapp { background: url(../images/weatherapp.png); }
-    &.jscalc { background: url(../images/jscalc.png); }
-    &.sorttimer { background: url(../images/sorttimer.png); }
-    &.quotemachine { background: url(../images/quotemachine1.png); }
-    &.starsnearearth { background: url(../images/starsnearearth.png); }
+    &.loc8r { background: url(../images/loc8r.png); background-size: cover; }
+    &.weatherapp { background: url(../images/weatherapp.png); background-size: cover; }
+    &.jscalc { background: url(../images/jscalc.png); background-size: cover; }
+    &.sorttimer { background: url(../images/sorttimer.png); background-size: cover; }
+    &.quotemachine { background: url(../images/quotemachine1.png); background-size: cover; }
+    &.starsnearearth { background: url(../images/starsnearearth.png); background-size: cover; }
 	}
 }
 
