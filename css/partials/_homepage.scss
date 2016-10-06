@@ -57,7 +57,6 @@ body #footer {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #333;
-	background-position: center center;
 
   .jumbotron {
     background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
@@ -209,8 +208,11 @@ body #footer {
 }
 
 @media (max-width: 991px) {
-	#bg1 .jumbotron p {
-		font-size: 19px;
+	#bg1 {
+		background-position: center center;
+		.jumbotron p {
+			font-size: 19px;
+		}
 	}
 	.profile {
 		display: none;

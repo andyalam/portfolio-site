@@ -37,8 +37,7 @@ body #footer {
   background-image: url(../images/astronaut1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #333;
-  background-position: center center; }
+  background-color: #333; }
   #bg1 .jumbotron {
     background: #cccccc;
     /* Fallback for older browsers without RGBA-support */
@@ -170,8 +169,10 @@ body #footer {
   #footer .navbar-text {
     display: none; } }
 @media (max-width: 991px) {
-  #bg1 .jumbotron p {
-    font-size: 19px; }
+  #bg1 {
+    background-position: center center; }
+    #bg1 .jumbotron p {
+      font-size: 19px; }
 
   .profile {
     display: none; } }
