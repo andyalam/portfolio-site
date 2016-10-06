@@ -57,6 +57,7 @@ body #footer {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #333;
+	background-position: center center;
 
   .jumbotron {
     background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
@@ -155,6 +156,8 @@ body #footer {
     &.sorttimer { background: url(../images/sorttimer.png); background-size: cover; }
     &.quotemachine { background: url(../images/quotemachine1.png); background-size: cover; }
     &.starsnearearth { background: url(../images/starsnearearth.png); background-size: cover; }
+		&.django_ig { background: url(../images/ig1.png); background-size: cover; background-position: center center; }
+		&.todo { background: url(../images/todo.png); background-size: cover; background-position: center center; }
 	}
 }
 
@@ -204,7 +207,11 @@ body #footer {
 		}
 	}
 }
+
 @media (max-width: 991px) {
+	#bg1 .jumbotron p {
+		font-size: 19px;
+	}
 	.profile {
 		display: none;
 	}

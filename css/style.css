@@ -37,7 +37,8 @@ body #footer {
   background-image: url(../images/astronaut1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #333; }
+  background-color: #333;
+  background-position: center center; }
   #bg1 .jumbotron {
     background: #cccccc;
     /* Fallback for older browsers without RGBA-support */
@@ -126,6 +127,14 @@ body #footer {
     #bg2 .img-box.starsnearearth {
       background: url(../images/starsnearearth.png);
       background-size: cover; }
+    #bg2 .img-box.django_ig {
+      background: url(../images/ig1.png);
+      background-size: cover;
+      background-position: center center; }
+    #bg2 .img-box.todo {
+      background: url(../images/todo.png);
+      background-size: cover;
+      background-position: center center; }
 
 .holder {
   position: relative; }
@@ -161,6 +170,9 @@ body #footer {
   #footer .navbar-text {
     display: none; } }
 @media (max-width: 991px) {
+  #bg1 .jumbotron p {
+    font-size: 19px; }
+
   .profile {
     display: none; } }
 .modal-backdrop {
