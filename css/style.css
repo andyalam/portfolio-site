@@ -152,7 +152,8 @@ body #footer {
     display: none; }
 
   .contact-mobile-form {
-    display: block; }
+    display: block;
+    float: right; }
 
   .navbar {
     background-color: #008cba; }
