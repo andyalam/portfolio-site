@@ -109,6 +109,12 @@ body #footer {
 
 #bg2 {
 	margin-bottom: 100px;
+	a h5, h3, h4 {
+		font-weight: bold;
+	}
+	h4 {
+		font-style: italic;
+	}
 	.img-wrap {
 		.img-responsive {
 			margin: 0 auto;
@@ -149,6 +155,8 @@ body #footer {
 			}
 			i { font-size: 60px; }
 		}
+		&.vocalize { background: url(../images/vocalize.png); background-size: cover; }
+		&.dictaphone { background: url(../images/dictaphone.png); background-size: cover; }
     &.loc8r { background: url(../images/loc8r.png); background-size: cover; }
     &.weatherapp { background: url(../images/weatherapp.png); background-size: cover; }
     &.jscalc { background: url(../images/jscalc.png); background-size: cover; }

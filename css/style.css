@@ -78,6 +78,10 @@ body #footer {
 
 #bg2 {
   margin-bottom: 100px; }
+  #bg2 a h5, #bg2 h3, #bg2 h4 {
+    font-weight: bold; }
+  #bg2 h4 {
+    font-style: italic; }
   #bg2 .img-wrap .img-responsive {
     margin: 0 auto; }
   #bg2 .img-box {
@@ -108,6 +112,12 @@ body #footer {
           text-decoration: none; }
       #bg2 .img-box .overlay i {
         font-size: 60px; }
+    #bg2 .img-box.vocalize {
+      background: url(../images/vocalize.png);
+      background-size: cover; }
+    #bg2 .img-box.dictaphone {
+      background: url(../images/dictaphone.png);
+      background-size: cover; }
     #bg2 .img-box.loc8r {
       background: url(../images/loc8r.png);
       background-size: cover; }
