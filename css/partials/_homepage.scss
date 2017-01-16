@@ -92,6 +92,12 @@ body #footer {
 			margin: 0 auto;
 		}
 	}
+	.no-link {
+		margin-top: 37px;
+	}
+	.projects-title {
+		margin-top: 80px;
+	}
 	.img-box {
 		width: 100%;
 		height: 250px;
@@ -110,9 +116,9 @@ body #footer {
 			}
 			a {
 				transition: all ease-in-out 100ms;
-				color: $red-light;
+				color: #fff;
 				&:first-of-type {
-          color: $blue-light;
+          color: #fff;
           &:hover {
             color: $blue-light * 2;
           }
@@ -137,6 +143,9 @@ body #footer {
     &.starsnearearth { background: url(../images/starsnearearth.png); background-size: cover; }
 		&.django_ig { background: url(../images/ig1.png); background-size: cover; background-position: center center; }
 		&.todo { background: url(../images/todo.png); background-size: cover; background-position: center center; }
+		&.savingamerica { background: url(../images/savingamerica.png); background-size: cover; background-position: center center; }
+		&.magpiehealthanalytics { background: url(../images/magpiehealthanalytics.png); background-size: cover; background-position: center center; }
+		&.runforpeople { background: url(../images/runforpeople.png); background-size: cover; background-position: center center; }
 	}
 }
 
